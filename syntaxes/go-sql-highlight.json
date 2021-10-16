@@ -1,0 +1,27 @@
+{
+  "fileTypes": ["go"],
+  "injectionSelector": "L:source -comment -string",
+  "patterns": [
+    {
+      "name": "meta.embedded.block.sql",
+      "begin": "\\s*+(/\\* [sS][qQ][lL] \\*/)\\s*(`)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.string.begin.go"
+        }
+      },
+      "end": "(`)",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.string.end.go"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.sql"
+        }
+      ]
+    }
+  ],
+  "scopeName": "sql-string.injection"
+}

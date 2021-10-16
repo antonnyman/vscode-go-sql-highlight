@@ -1,0 +1,31 @@
+{
+  "name": "go-sql-highlight",
+  "version": "0.0.3",
+  "displayName": "SQL Syntax Higlighter for Go",
+  "description": "An SQL syntax highlighter for template literals in go",
+  "author": "Anton Nyman <anton@antonnyman.se>",
+  "icon": "img/gopher.png",
+  "publisher": "antonnyman",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonnyman/vscode-go-sql-highlight.git"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "contributes": {
+    "grammars": [
+      {
+        "path": "./syntaxes/go-sql-highlight.json",
+        "scopeName": "sql-string.injection",
+        "injectTo": [
+          "source.go"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.sql": "sql"
+        }
+      }
+    ]
+  }
+}
