@@ -1,7 +1,7 @@
 {
   "name": "go-sql-highlight",
-  "version": "0.0.3",
-  "displayName": "SQL Syntax Higlighter for Go",
+  "version": "0.0.6",
+  "displayName": "SQL Syntax Highlighter for Go",
   "description": "An SQL syntax highlighter for template literals in go",
   "author": "Anton Nyman <anton@antonnyman.se>",
   "icon": "img/gopher.png",
